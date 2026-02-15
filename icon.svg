@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#4f46e5"/>
+    </linearGradient>
+    <linearGradient id="shine" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="white" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="white" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <!-- Rounded square background -->
+  <rect x="0" y="0" width="1024" height="1024" rx="228" fill="url(#bg)"/>
+  <rect x="0" y="0" width="1024" height="512" rx="228" fill="url(#shine)"/>
+
+  <!-- Window grid: 2x2 layout representing snapped windows -->
+  <!-- Top-left (large - left two-thirds height) -->
+  <rect x="148" y="198" width="346" height="290" rx="20" fill="white" opacity="0.95"/>
+  <!-- Top-right -->
+  <rect x="524" y="198" width="352" height="290" rx="20" fill="white" opacity="0.7"/>
+  <!-- Bottom-left -->
+  <rect x="148" y="518" width="346" height="290" rx="20" fill="white" opacity="0.7"/>
+  <!-- Bottom-right -->
+  <rect x="524" y="518" width="352" height="290" rx="20" fill="white" opacity="0.5"/>
+
+  <!-- Magnet horseshoe shape overlay in center -->
+  <g transform="translate(512, 500)" opacity="0.9">
+    <!-- Horseshoe magnet -->
+    <path d="M-60,-120 L-60,20 A60,60 0 0,0 60,20 L60,-120"
+          fill="none" stroke="white" stroke-width="32" stroke-linecap="round"/>
+    <!-- Red pole -->
+    <rect x="-76" y="-140" width="32" height="50" rx="6" fill="#ef4444"/>
+    <!-- Blue pole -->
+    <rect x="44" y="-140" width="32" height="50" rx="6" fill="#3b82f6"/>
+    <!-- Magnetic field lines -->
+    <path d="M-30,30 Q-30,70 0,70 Q30,70 30,30" fill="none" stroke="white" stroke-width="4" opacity="0.5"/>
+    <path d="M-45,30 Q-45,90 0,90 Q45,90 45,30" fill="none" stroke="white" stroke-width="3" opacity="0.35"/>
+    <path d="M-60,30 Q-60,110 0,110 Q60,110 60,30" fill="none" stroke="white" stroke-width="2" opacity="0.2"/>
+  </g>
+</svg>
