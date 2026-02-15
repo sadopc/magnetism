@@ -1,0 +1,34 @@
+name: Magnetism
+options:
+  deploymentTarget:
+    macOS: "14.0"
+  bundleIdPrefix: com.magnetism
+  xcodeVersion: "16.2"
+
+packages:
+  KeyboardShortcuts:
+    url: https://github.com/sindresorhus/KeyboardShortcuts
+    from: "2.0.0"
+
+targets:
+  Magnetism:
+    type: application
+    platform: macOS
+    sources:
+      - Magnetism
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.magnetism.app
+        PRODUCT_NAME: Magnetism
+        MARKETING_VERSION: "1.0.0"
+        CURRENT_PROJECT_VERSION: "1"
+        INFOPLIST_FILE: Magnetism/App/Info.plist
+        CODE_SIGN_ENTITLEMENTS: Magnetism/App/Magnetism.entitlements
+        ENABLE_HARDENED_RUNTIME: true
+        CODE_SIGN_IDENTITY: "-"
+        SWIFT_VERSION: "6.0"
+        MACOSX_DEPLOYMENT_TARGET: "14.0"
+        GENERATE_INFOPLIST_FILE: false
+        ENABLE_APP_SANDBOX: false
+    dependencies:
+      - package: KeyboardShortcuts
