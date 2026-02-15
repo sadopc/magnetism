@@ -51,10 +51,9 @@ All shortcuts can be changed in Preferences → Shortcuts.
 ### Homebrew (recommended)
 
 ```bash
-brew install --cask magnetism
+brew tap sadopc/tap
+brew install --cask --no-quarantine magnetism
 ```
-
-> *Homebrew tap coming soon — see [Distribution](#distribution) below.*
 
 ### Manual Download
 
@@ -79,18 +78,15 @@ xcodebuild -scheme Magnetism -configuration Release build
 
 The built app will be in `~/Library/Developer/Xcode/DerivedData/Magnetism-*/Build/Products/Release/Magnetism.app`.
 
-## Distribution
+## Gatekeeper Notice
 
-Since the app is **not code-signed** (no $99/year Apple Developer account), macOS Gatekeeper will block it on first launch. Here are the ways users can open it:
+The app is **not notarized** (no $99/year Apple Developer account). macOS will block it unless you bypass Gatekeeper:
 
-| Method | User Experience |
+| Method | How |
 |---|---|
-| **Right-click → Open** | One-time dialog, then works forever |
-| **System Settings → Open Anyway** | Same, via Privacy & Security |
-| **Homebrew Cask** | Handles Gatekeeper automatically — best UX |
-| **`xattr -cr Magnetism.app`** | Terminal command to strip quarantine flag |
-
-The **Homebrew Cask** approach gives users the smoothest experience — `brew install --cask magnetism` handles everything. To set this up, a [Homebrew tap](https://docs.brew.sh/How-to-Create-and-Maintain-a-Tap) is needed with a cask formula pointing to the GitHub release zip.
+| **Homebrew** (recommended) | `brew install --cask --no-quarantine magnetism` |
+| **Manual download** | Right-click → Open → click Open, or System Settings → Privacy & Security → Open Anyway |
+| **Terminal** | `xattr -cr /Applications/Magnetism.app` |
 
 ## Requirements
 
