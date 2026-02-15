@@ -24,7 +24,9 @@ final class AccessibilityElement {
         guard let app = frontmostApplication() else { return nil }
         var windowRef: CFTypeRef?
         let result = AXUIElementCopyAttributeValue(app.element, kAXFocusedWindowAttribute as CFString, &windowRef)
-        guard result == .success, let window = windowRef else { return nil }
+        guard result == .success,
+              let window = windowRef,
+              CFGetTypeID(window) == AXUIElementGetTypeID() else { return nil }
         return AccessibilityElement(window as! AXUIElement)
     }
 
@@ -34,9 +36,9 @@ final class AccessibilityElement {
         get {
             var ref: CFTypeRef?
             let result = AXUIElementCopyAttributeValue(element, kAXPositionAttribute as CFString, &ref)
-            guard result == .success, let ref = ref else { return nil }
+            guard result == .success, let ref = ref, CFGetTypeID(ref) == AXValueGetTypeID() else { return nil }
             var point = CGPoint.zero
-            AXValueGetValue(ref as! AXValue, .cgPoint, &point)
+            guard AXValueGetValue(ref as! AXValue, .cgPoint, &point) else { return nil }
             return point
         }
         set {
@@ -50,9 +52,9 @@ final class AccessibilityElement {
         get {
             var ref: CFTypeRef?
             let result = AXUIElementCopyAttributeValue(element, kAXSizeAttribute as CFString, &ref)
-            guard result == .success, let ref = ref else { return nil }
+            guard result == .success, let ref = ref, CFGetTypeID(ref) == AXValueGetTypeID() else { return nil }
             var size = CGSize.zero
-            AXValueGetValue(ref as! AXValue, .cgSize, &size)
+            guard AXValueGetValue(ref as! AXValue, .cgSize, &size) else { return nil }
             return size
         }
         set {

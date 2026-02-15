@@ -36,6 +36,7 @@
 		9A257EB0FDF12AF23DF66DF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0843FD56589A45F0CA53222 /* Assets.xcassets */; };
 		A543A7B6FABB89A5406B635C /* MenuBarManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A005A0273054823A690CC86 /* MenuBarManager.swift */; };
 		A5D1E51F77D0ED689E45DC20 /* ScreenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C262FA327B85C4FD3CDFC3CF /* ScreenManager.swift */; };
+		A6AC44A26D173C3AC90A74B4 /* WindowActionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77192816ED2F097529280641 /* WindowActionTests.swift */; };
 		BEF87DBE61472D57DFA85F45 /* LaunchOnLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1851292A98B22BD35BFDF14 /* LaunchOnLogin.swift */; };
 		CA57C478E80F5EAA01A0FAB0 /* BottomHalfCalculation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4BCB2C623A7D954DD0549FBF /* BottomHalfCalculation.swift */; };
 		D36D2B6CD007D647F3948C46 /* SnapZone.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E73E1D0CCAEE08963E25B18 /* SnapZone.swift */; };
@@ -49,6 +50,16 @@
 		FB01C68659D64788309D154B /* WindowHistory.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1CAD71AE0D921ACDF71C836 /* WindowHistory.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		666CE731297E1FAD21944019 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC27D05AF0209CF9794E8658 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 80B2472F6A824564DEA243B0;
+			remoteInfo = Magnetism;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		0A005A0273054823A690CC86 /* MenuBarManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarManager.swift; sourceTree = "<group>"; };
 		0C591088C7FC5DB51AAA6BA7 /* LeftTwoThirdsCalculation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftTwoThirdsCalculation.swift; sourceTree = "<group>"; };
@@ -61,6 +72,7 @@
 		47F96BCE4421B8C667CC5351 /* MaximizeCalculation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaximizeCalculation.swift; sourceTree = "<group>"; };
 		484324E84A47297BED0FBF5B /* TopLeftQuarterCalculation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopLeftQuarterCalculation.swift; sourceTree = "<group>"; };
 		4BCB2C623A7D954DD0549FBF /* BottomHalfCalculation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomHalfCalculation.swift; sourceTree = "<group>"; };
+		4E86C06A71B50D917CF93165 /* MagnetismTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MagnetismTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		597BA3E1FD0562CC447ED2AD /* AccessibilityElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityElement.swift; sourceTree = "<group>"; };
 		5A552217E77907727BC39345 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		5A6DF84F7355BAEE3EDCEA1A /* CenterThirdCalculation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CenterThirdCalculation.swift; sourceTree = "<group>"; };
@@ -68,6 +80,7 @@
 		600029E8B9BC636971494392 /* RightThirdCalculation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RightThirdCalculation.swift; sourceTree = "<group>"; };
 		7247D2B6A7F3BAD651884BF3 /* TopRightQuarterCalculation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopRightQuarterCalculation.swift; sourceTree = "<group>"; };
 		73F898E09A5FA0BBE0415A78 /* LeftThirdCalculation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftThirdCalculation.swift; sourceTree = "<group>"; };
+		77192816ED2F097529280641 /* WindowActionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowActionTests.swift; sourceTree = "<group>"; };
 		8B72D757A5C9E2954D4E199B /* PreferencesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesView.swift; sourceTree = "<group>"; };
 		8CC3564AFE4F2728C9FD13B0 /* GeneralPreferencesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralPreferencesView.swift; sourceTree = "<group>"; };
 		9118DA4B511DFF4294986BE0 /* SnapOverlayWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapOverlayWindow.swift; sourceTree = "<group>"; };
@@ -121,6 +134,7 @@
 			isa = PBXGroup;
 			children = (
 				61445B98AE632BA2072B1CAF /* Magnetism */,
+				F1D78A2D2A44511A459A15DC /* MagnetismTests */,
 				BEBE8396A31033CCAD11D952 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -200,6 +214,7 @@
 			isa = PBXGroup;
 			children = (
 				E418266F73975D3C449C49F9 /* Magnetism.app */,
+				4E86C06A71B50D917CF93165 /* MagnetismTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -234,9 +249,35 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
+		F1D78A2D2A44511A459A15DC /* MagnetismTests */ = {
+			isa = PBXGroup;
+			children = (
+				77192816ED2F097529280641 /* WindowActionTests.swift */,
+			);
+			path = MagnetismTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		25453980A44155B50C453D68 /* MagnetismTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 85E769B1B8C818BD9F23A360 /* Build configuration list for PBXNativeTarget "MagnetismTests" */;
+			buildPhases = (
+				7B41A8F059FC9C9F5B2717F3 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				834BA79F18E582677C14E977 /* PBXTargetDependency */,
+			);
+			name = MagnetismTests;
+			packageProductDependencies = (
+			);
+			productName = MagnetismTests;
+			productReference = 4E86C06A71B50D917CF93165 /* MagnetismTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		80B2472F6A824564DEA243B0 /* Magnetism */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0FA358FC11DB142357B02AD3 /* Build configuration list for PBXNativeTarget "Magnetism" */;
@@ -284,6 +325,7 @@
 			projectRoot = "";
 			targets = (
 				80B2472F6A824564DEA243B0 /* Magnetism */,
+				25453980A44155B50C453D68 /* MagnetismTests */,
 			);
 		};
 /* End PBXProject section */
@@ -300,6 +342,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		7B41A8F059FC9C9F5B2717F3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A6AC44A26D173C3AC90A74B4 /* WindowActionTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F6661D3E9F5B78052F8F0B5E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -347,7 +397,34 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		834BA79F18E582677C14E977 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 80B2472F6A824564DEA243B0 /* Magnetism */;
+			targetProxy = 666CE731297E1FAD21944019 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		2F20F93B8C514603963B0D9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.magnetism.MagnetismTests;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 6.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Magnetism.app/Contents/MacOS/Magnetism";
+			};
+			name = Debug;
+		};
 		9484D468A653A7545DD80EE6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -355,7 +432,7 @@
 				CODE_SIGN_ENTITLEMENTS = Magnetism/App/Magnetism.entitlements;
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				ENABLE_APP_SANDBOX = NO;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = NO;
@@ -365,7 +442,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.magnetism.app;
 				PRODUCT_NAME = Magnetism;
 				SDKROOT = macosx;
@@ -499,7 +576,7 @@
 				CODE_SIGN_ENTITLEMENTS = Magnetism/App/Magnetism.entitlements;
 				CODE_SIGN_IDENTITY = "-";
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				ENABLE_APP_SANDBOX = NO;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = NO;
@@ -509,11 +586,30 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 14.0;
-				MARKETING_VERSION = 1.0.0;
+				MARKETING_VERSION = 1.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.magnetism.app;
 				PRODUCT_NAME = Magnetism;
 				SDKROOT = macosx;
 				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		CBE7046DFF37D40ECABFB5EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.magnetism.MagnetismTests;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 6.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Magnetism.app/Contents/MacOS/Magnetism";
 			};
 			name = Release;
 		};
@@ -534,6 +630,15 @@
 			buildConfigurations = (
 				A674F158E1E3F0497EBB1DB6 /* Debug */,
 				A3A1AFD8F123FCB2F6DF845E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		85E769B1B8C818BD9F23A360 /* Build configuration list for PBXNativeTarget "MagnetismTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2F20F93B8C514603963B0D9D /* Debug */,
+				CBE7046DFF37D40ECABFB5EC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;

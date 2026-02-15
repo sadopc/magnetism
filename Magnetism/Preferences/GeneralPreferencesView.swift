@@ -9,7 +9,14 @@ struct GeneralPreferencesView: View {
             Section {
                 Toggle("Launch at login", isOn: $launchAtLogin)
                     .onChange(of: launchAtLogin) { _, newValue in
-                        LaunchOnLogin.setEnabled(newValue)
+                        if !LaunchOnLogin.setEnabled(newValue) {
+                            // Revert toggle if the operation failed
+                            launchAtLogin = !newValue
+                        }
+                    }
+                    .onAppear {
+                        // Sync toggle with actual system state
+                        launchAtLogin = LaunchOnLogin.isEnabled
                     }
 
                 Toggle("Enable drag-to-edge snapping", isOn: $snappingEnabled)

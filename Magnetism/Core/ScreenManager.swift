@@ -6,9 +6,15 @@ final class ScreenManager {
 
     private init() {}
 
-    /// All screens ordered left-to-right by their frame origin.
+    /// All screens in a deterministic order: left-to-right, then top-to-bottom.
+    /// Uses both X and Y to handle vertically stacked or same-X monitor layouts.
     var orderedScreens: [NSScreen] {
-        NSScreen.screens.sorted { $0.frame.origin.x < $1.frame.origin.x }
+        NSScreen.screens.sorted {
+            if $0.frame.origin.x != $1.frame.origin.x {
+                return $0.frame.origin.x < $1.frame.origin.x
+            }
+            return $0.frame.origin.y < $1.frame.origin.y
+        }
     }
 
     /// Find the screen that contains the center of the given rect (in AX/top-left coordinate space).
