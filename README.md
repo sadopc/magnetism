@@ -51,8 +51,7 @@ All shortcuts can be changed in Preferences → Shortcuts.
 ### Homebrew (recommended)
 
 ```bash
-brew tap sadopc/tap
-brew install --cask --no-quarantine magnetism
+brew install --cask --no-quarantine sadopc/tap/magnetism
 ```
 
 ### Manual Download
@@ -84,7 +83,7 @@ The app is **not notarized** (no $99/year Apple Developer account). macOS will b
 
 | Method | How |
 |---|---|
-| **Homebrew** (recommended) | `brew install --cask --no-quarantine magnetism` |
+| **Homebrew** (recommended) | `brew install --cask --no-quarantine sadopc/tap/magnetism` |
 | **Manual download** | Right-click → Open → click Open, or System Settings → Privacy & Security → Open Anyway |
 | **Terminal** | `xattr -cr /Applications/Magnetism.app` |
 
